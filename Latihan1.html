@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+    
+    <!--
+    Nim: 252520053
+    Nama Lengkap: Ramdhan Qurniawan
+    Kelas: A--
+    -->
+
+    <h1>Form Pendaftaran</h1>
+
+    <form action="proses.php" method="post">
+        Nama: <input type="text" name="nama"><br><br>
+
+        Email: <input type="email" name="email"><br><br>
+        
+        Jenis Kelamin:
+        <input type="radio" name="jk" value="L" checked> Laki-laki
+        <input type="radio" name="jk" value="P"> Perempuan<br><br>
+        
+        Hobi:
+        <input type="checkbox" name="hobi[]" value="baca" checked> Membaca
+        <input type="checkbox" name="hobi[]" value="musik"> Musik
+        <input type="checkbox" name="hobi[]" value="olahraga" checked> Olahraga<br><br>
+
+        Jurusan:
+        <select name="jurusan">
+            <option>Informatika</option>
+            <option>Sistem Informasi</option>
+        </select><br><br>
+        
+        Alamat: <br>
+        <textarea name="alamat" rows="3" cols="40"></textarea><br><br>
+        
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+    </form>
+<!-- -->
+</body>
+</html>

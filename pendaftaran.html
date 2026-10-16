@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Peserta</title>
+    <!--
+    Nim: 252520053
+    Nama Lengkap: Ramdhan Qurniawan
+    Kelas: A--
+    -->
+
+    <style>
+        body {
+            font-family: Arial; 
+            background: #f4f8ff; 
+            margin: 40px; 
+        }
+
+        .container {
+            background: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 40%;
+            margin: 0 auto;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+            box-sizing: border-box;
+        }
+
+        .tabel-bawah {
+            background: white;
+            width: 40%;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #1a56b0; 
+            text-align: center; 
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #1a56b0; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        table {
+            border-collapse: collapse; 
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        th {
+            background: #1a56b0; 
+            color: white; 
+            padding: 8px; 
+        }
+
+        td {
+            border: 1px solid #ccd; 
+            padding: 8px; 
+        }
+        
+        th:nth-child(1) { text-align: center; }
+        th:nth-child(2) { text-align: center; }
+        th:nth-child(3) { text-align: center; }
+
+        td:nth-child(1) { text-align: left; }
+        td:nth-child(2) { text-align: left; }
+        td:nth-child(3) { text-align: left; }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Pendaftaran Peserta</h1>
+    <div class="container">
+        <form action="proses.php" method="post">
+            Nama: <input type="text" name="nama"><br><br>
+
+            Jenis Kelamin:
+            <input type="radio" name="jk" value="L" checked> L
+            <input type="radio" name="jk" value="P"> P<br><br>
+
+            Jurusan:
+            <select name="jurusan">
+                <option>Informatika</option>
+                <option>Sistem Informasi</option>
+            </select><br>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    <div class="tabel-bawah">
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Jurusan</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Budi Santoso</td>
+                <td>Informatika</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sari Wulandari</td>
+                <td>Sistem Informasi</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+<!-- -->

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa</title>
+    <!--
+    Nim: 252520053
+    Nama Lengkap: Ramdhan Qurniawan
+    Kelas: A--
+    -->
+
+    <style>
+        body {
+            font-family: Arial; 
+            background: #f4f8ff; 
+            margin: 40px; 
+        }
+
+        .container {
+            background: white;
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 50%;
+            margin: 0 auto;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h1, h2 {
+            color: #1a56b0; 
+            text-align: center; 
+            margin-top: 0;
+        }
+
+        table {
+            border-collapse: collapse; 
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        th {
+            background: #1a56b0; 
+            color: white; 
+            padding: 8px; 
+            text-align: center;
+            border: 1px solid #1a56b0;
+        }
+
+        td {
+            border: 1px solid #ccd; 
+            padding: 8px; 
+        }
+
+        button {
+            background-color: #1a56b0; 
+            color: white; 
+            border: none; 
+            padding: 8px 18px; 
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Penambahan Data Mahasiswa</h1>
+
+        <form action="proses.php" method="post">
+            Nama: <input type="text" name="nama"><br><br>
+
+            Email: <input type="email" name="email"><br><br>
+
+            Jenis Kelamin:
+            <input type="radio" name="jk" value="L" checked> L
+            <input type="radio" name="jk" value="P"> P<br><br>
+
+            Hobi:
+            <input type="checkbox" name="hobi[]" value="baca" checked> Membaca
+            <input type="checkbox" name="hobi[]" value="musik"> Musik
+            <input type="checkbox" name="hobi[]" value="olahraga" checked> Olahraga<br><br>
+
+            Jurusan:
+            <select name="jurusan">
+                <option>Informatika</option>
+                <option>Sistem Informasi</option>
+            </select><br><br>
+
+            Alamat: <br>
+            <textarea name="alamat" rows="3" cols="40"></textarea><br><br>
+
+            <button type="submit">Kirim</button>
+        </form>
+
+        <h2>Daftar Mahasiswa</h2>
+        <table>
+            <tr>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Prodi</th>
+                <th>IPK</th>
+            </tr>
+            <!-- INFORMATIKA (3 mahasiswa) -->
+            <tr>
+                <td>25251001</td>
+                <td>Budi</td>
+                <td rowspan="3">Informatika</td>
+                <td>3.4</td>
+            </tr>
+            <tr>
+                <td>25251003</td>
+                <td>Andi</td>
+                <td>2.8</td>
+            </tr>
+            <tr>
+                <td>25251005</td>
+                <td>Dewi</td>
+                <td>3.0</td>
+            </tr>
+            <!-- SISTEM INFORMASI (2 mahasiswa) -->
+            <tr>
+                <td>25251002</td>
+                <td>Sari</td>
+                <td rowspan="2">Sistem Informasi</td>
+                <td>3.2</td>
+            </tr>
+            <tr>
+                <td>25251004</td>
+                <td>Rina</td>
+                <td>3.6</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+<!-- -->
